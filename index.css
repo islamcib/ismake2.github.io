@@ -1,26 +1,26 @@
 .page {
-  background-color: rgb(15,13,18);
-  max-width: 100px;
-  min-width: 1000px;
+  background-color: rgb(15, 13, 18);
+  max-width: 100%;
   font-family: "Montserrat", Arial, sans-serif;
   margin: 0;
-  background-image: url('./images/2.jpeg');
+  background-image: url('./images/images.jpeg');
   background-position: bottom right;
   background-repeat: no-repeat;
-  background-size: contain;
-  height: 120vh;
-  
+  background-size: cover;
+  height: 100vh;
   color: whitesmoke;
+  overflow-x: hidden; /* Добавлено, чтобы предотвратить горизонтальную прокрутку */
 }
 
 .main {
-  padding-left: 45px;
+  padding: 45px;
 }
 
 .header {
   margin-bottom: 25px;
-  padding-left: 45px;
+  padding-left: 0; /* Исправлено значение padding-left */
   margin-top: 40px;
+  text-align: center; /* Центрирование заголовка */
 }
 
 .header__title {
@@ -28,21 +28,24 @@
   margin: 0;
   font-size: 54px;
   font-weight: 500;
-  color: rgb(222,176,64);
+  color: rgb(222, 176, 64);
 }
 
-
-
 .player {
-  background-color: rgba(228, 228, 231, 0.043);
+  background-color: rgba(0, 0, 0, 0.8); /* Увеличено значение прозрачности */
   border-radius: 10px;
-  margin: 0;
+  margin: 0 auto; /* Центрирование блока */
   padding: 20px;
-  width: 60%;
+  max-width: 600px; /* Максимальная ширина блока */
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+/* Остальной CSS остается без изменений */
+
+
 
 .player__song-name {
   margin: 25px 0 15px;
