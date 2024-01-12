@@ -50,6 +50,62 @@ const musicFiles = [
   {
     id: 6,
     name: "Streets _remix_ "
+  },
+  {
+    id: 7,
+    name: "Cigarettes After Sex - Apocalypse"
+  },
+  {
+    id: 8,
+    name: "Eminen ft. Dido-Stan"
+  },
+  {
+    id: 9,
+    name: "Eyedress, Dent May - Something About You"
+  },
+  {
+    id: 10,
+    name: "mac demacro - my kind of woman"
+  },
+  {
+    id: 11,
+    name: "Mitski - My Love Mine All Mine"
+  },
+  {
+    id: 12,
+    name: "New West-Those eyes ( speed up )"
+  },
+  {
+    id: 13,
+    name: "Okay - Chase Atlantic"
+  },
+  {
+    id: 14,
+    name: "Suki Waterhouse-Good Loking"
+  },
+  {
+    id: 15,
+    name: "The Walters-I Love You So"
+  },
+  {
+    id: 16,
+    name: "the neighborhood-reflections"
+  },
+  {
+    id: 17,
+    name: "Verzache (tg.)-Needs"
+  },
+  {
+    id: 18,
+    name: "weeknd--trust issues"
+  },
+  {
+    id: 19,
+    name: "weeknd--trust issues"
+  },
+  {
+    id: 20,
+    name: "Streets _remix_ "
   }
 ];
 
