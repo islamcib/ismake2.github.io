@@ -1,71 +1,27 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./index.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Montserrat:wght@500&display=swap" rel="stylesheet">
-  <title>Music player</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Islam</title>
 </head>
-
-<body class="page">
-  <header class="header">
-    <h1 class="header__title">this is your playlist</h1>
-  </header>
-
-  <main class="main">
-
-    <div class="player">
-      <audio id="audioPlayer">
-       
-        <source src="./audio/chase atlantic - friends.mp3"
-          type="audio/mp3">
-        Ваш браузер не поддерживает тег audio.
-      </audio>
-
-      <div class="player__song-name"></div>
-      <div class="player__progress-container">
-        <div class="player__progress"></div>
-      </div>
-
-      <div class="player__time-container">
-        <p class="player__current-time">00:00</p>
-        <p class="player__duration">00:00</p>
-      </div>
-
-      <div class="player__btn-container">
-        <div class="player__buttons">
-          <button class="btn shuffle"></button>
-          <button class="btn loop"></button>
-        </div>
-
-        <div class="player__buttons" style="margin-left: -45px;">
-          <button class="btn prev"></button>
-          <button class="btn play"></button>
-          <button class="btn next"></button>
-        </div>
-
-        <div class="player__buttons volume">
-            <img class="volume__icon" src="./images/volume.svg" alt="volume" />
-            <div class="volume__container">
-              <input class="volume__input" type="range" min="0" max="1" step="0.1" value="0.5" id="volumeSlider" orient="vertical">
-            </div>
+<body>
+    <div class="color-card" id="colorCard">
+        <div
+             class="color-card__top"
+             id="displayColor"
+             onClick="changeColor()"
+         ></div>
+        <div class="color-card__bottom">
+          <p id="hexNum">#ecd26b</p>
+          <div class="copy" onClick="copyCode()"></div>
+          <span class="tooltip">copy hex</span>
         </div>
       </div>
+      
+    
 
-      <canvas class="player__fireplace" id="player-fireplace"></canvas>
-    </div>
-
-    <div class="playlist__container">
-    </div>
-
-  </main>
-
-  <script src="./js/index.js"></script>
-  <script src="./js/visualize.js"></script>
+    <script src="main.js"></script>
 </body>
-
 </html>
